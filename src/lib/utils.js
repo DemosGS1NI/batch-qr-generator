@@ -36,7 +36,7 @@ export async function generatePDF(data) {
       const serialPrefix = serialString.slice(0, -2); // Extract all but the last two digits
       const serialSuffix = serialString.slice(-2);   // Extract the last two digits
 
-      const qrURL = `https://id.automaster.com.ni/01/${item.gtin}/11/${item['production date']}/21/${serialString}`;
+      const qrURL = `https://id.website.com/01/${item.gtin}/11/${item['production date']}/21/${serialString}`;
       const qrCode = await QRCode.toDataURL(qrURL);
 
       // First label: Display model name and count prominently

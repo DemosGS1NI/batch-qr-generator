@@ -86,12 +86,5 @@
       </button>
     {/if}
   </div>
-  
-  <style>
-    /* Add some custom styling for the page */
-    body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-    }
-  </style>
+
   
