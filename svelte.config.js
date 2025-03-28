@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-vercel';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -7,7 +7,10 @@ const config = {
 		alias: {
 			$lib: './src/lib',
 		},
-		adapter: adapter(),
+		adapter: adapter({
+			// Specify Node.js version
+			runtime: 'nodejs20.x'
+		}),
 	}
 };
 
